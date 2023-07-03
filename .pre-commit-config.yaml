@@ -8,6 +8,9 @@ repos:
       - id: terraform_docs
         args:
           - "--args=--lockfile=false"
+          - --hook-config=--path-to-file=README.md       
+          - --hook-config=--add-to-existing-file=true
+          - --hook-config=--create-file-if-not-exist=true
       - id: terraform_tflint
 
   - repo: https://github.com/compilerla/conventional-pre-commit.git
